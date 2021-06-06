@@ -1,0 +1,22 @@
+{
+  "name": "Tver.jp back and forward",
+  "description": "Jump 10seconds back or forward in Tver!",
+  "manifest_version": 2,
+  "version": "1.0",
+  "browser_action": {
+    "default_title": "tver",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://tver.jp/*"],
+      "js": ["inject.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "index.js"
+  ],
+  "icons" : {
+    "64": "icon.png"
+  }
+}
